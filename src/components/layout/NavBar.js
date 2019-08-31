@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import SigninLink from './SigninLink';
 import SignoutLink from './SignoutLInk';
+import {connect} from 'react-redux'
 const NavBar = () => {
     return (
         <nav className="nav-wrapper grey darken-3">
@@ -13,5 +14,10 @@ const NavBar = () => {
         </nav>
     );
 }
-
-export default NavBar;
+const mapStateTiProps=(state)=>{
+    console.log('my auth',state)
+    return{
+        
+    }
+}
+export default connect(mapStateTiProps) (NavBar);
