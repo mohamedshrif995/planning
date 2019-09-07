@@ -6,6 +6,7 @@ import ProjectDetails from './components/projects/ProjectDetails'
 import Signin from './components/auth/Signin';
 import SignUp from './components/auth/Signup';
 import CreateProject from './components/projects/CreateProject';
+import ProjectList from './components/projects/ProjectList';
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
          <Route path='/signin' component={Signin} />
          <Route path='/signup' component={SignUp} />
          <Route path='/create' component={CreateProject} />
+         <Route path='/projectList' component={ProjectList} />
+
 
 
 
